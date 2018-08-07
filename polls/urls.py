@@ -1,8 +1,9 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 from . import views
 
+
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^list$',views.get_list, name='get_list'),
+    url(r'^question_list_temp/', views.question_list_temp),
+    url(r'^question_list/', views.question_list),
 ]
